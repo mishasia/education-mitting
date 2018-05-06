@@ -32,12 +32,12 @@
     </div>
 
     <div class="form-group">
-        {!! Form::label('status_id', 'Статус:') !!}
+        {!! Form::label('status_id', 'Посада:') !!}
         {!! Form::select('status_id', $statuses, $teacher->status_id, ['class' => 'form-control',  'required']) !!}
     </div>
 
     <div class="form-group">
-        {!! Form::label('high_status_id', 'Докторат:') !!}
+        {!! Form::label('high_status_id', 'Докторський ступінь:') !!}
         {!! Form::select('high_status_id', $highStatuses, $teacher->high_status_id, ['class' => 'form-control',  'required']) !!}
     </div>
 
@@ -56,8 +56,6 @@
 
     {!! Form::close() !!}
 @endsection
-
-
 
 @section('styles')
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">

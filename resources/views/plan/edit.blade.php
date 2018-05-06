@@ -5,7 +5,7 @@
     {!! Form::open(['route' => ['plan.update', $plans->id,'method' => 'PUT']] ) !!}
     <input type="hidden" name="_method" value="PUT">
     <div class="form-group">
-        {!! Form::label('comment', 'Коментарій:') !!}
+        {!! Form::label('comment', 'Оголошення:') !!}
         {!! Form::textarea('comment', value($plans->comment),
          ['class' => 'form-control', 'rows' => 5, 'required']) !!}
     </div>

@@ -3,7 +3,8 @@
 @section('teacher')
 
     <div>
-        <h3>Коментарі за планом <span class="">"{{ $plan->comment }}"</span> автора "{{ $plan->teacher->first_name }} {{ $plan->teacher->last_name }}"</h3>
+        <h3>Коментарі за оголошенням:</h3>
+        <h4> <span class="">"{{ $plan->comment }} </span> яке активне з  {{ $plan->date_start }} по {{ $plan->date_end }}"</h4>
     </div>
     <table class="table">
         <thead>
