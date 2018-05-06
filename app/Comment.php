@@ -12,10 +12,10 @@ class Comment extends Model
      * @var array
      */
     protected $fillable = [
-        'student_id', 'text', 'plan_id'
+        'user_id', 'text', 'plan_id'
     ];
 
-    public function student() {
-        return $this->belongsTo(Student::class);
+    public function user() {
+        return $this->belongsTo(User::class);
     }
 }

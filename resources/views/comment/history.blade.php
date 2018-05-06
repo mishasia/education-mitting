@@ -17,8 +17,11 @@
         </thead>
         <tbody>
         @foreach($comments as $comment)
+            @php
+                $person = $comment->user->teacher ? $comment->user->teacher : $comment->user->student
+            @endphp
             <tr>
-                <td>{{ $comment->student->last_name }}  {{ $comment->student->first_name  }}</td>
+                <td>{{ $person->last_name }}  {{ $person->first_name  }}</td>
                 <td>{{ $comment->text }}</td>
                 <td>{{ $comment->created_at }}</td>
                 <td>
