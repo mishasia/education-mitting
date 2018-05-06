@@ -25,20 +25,41 @@
                 <td>{{ $comment->text }}</td>
                 <td>{{ $comment->created_at }}</td>
                 <td>
-                    {!! Form::open(['method'=>'DELETE',
-                    'route' => ['comment.remove', $comment->id]])  !!}
-                    <button onclick=" return confirm('Ви точно хочете видалити?')"
-                            style="
-                            background: transparent;
-                            border: none;
-                            padding: 0px;
-                                  ">
-                        <i class="glyphicon glyphicon-remove" style="color: #337ab7"></i>
-                    </button>
-                    {!! Form::close() !!}
+                    @if (auth()->user()->id === $comment->user->id)
+                        {!! Form::open(['method'=>'DELETE',
+                        'route' => ['comment.remove', $comment->id]])  !!}
+                        <button onclick=" return confirm('Ви точно хочете видалити?')"
+                                style="
+                                background: transparent;
+                                border: none;
+                                padding: 0px;
+                                      ">
+                            <i class="glyphicon glyphicon-remove" style="color: #337ab7"></i>
+                        </button>
+                        {!! Form::close() !!}
+                    @endif
                 </td>
             </tr>
         @endforeach
         </tbody>
     </table>
+
+    <div>
+        {!! Form::open(['route' => 'comment.save']) !!}
+
+        {!! Form::hidden('plan_id', $plan->id) !!}
+
+        <div class="form-group">
+            {!! Form::label('text', 'Коментарій:') !!}
+            {!! Form::textarea('text', null, ['class' => 'form-control', 'rows' => 5, 'required']) !!}
+        </div>
+
+        <div class="form-group">
+            {!! Form::submit('Додати', [
+                'class' => 'btn btn-success col-md-3'
+            ]) !!}
+        </div>
+
+        {!! Form::close() !!}
+    </div>
 @endsection

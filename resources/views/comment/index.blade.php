@@ -24,17 +24,19 @@
                     <td>{{ $comment->text }}</td>
                     <td>{{ $comment->created_at }}</td>
                     <td>
-                        {!! Form::open(['method'=>'DELETE',
-                        'route' => ['comment.remove', $comment->id]])  !!}
-                        <button onclick=" return confirm('Ви точно хочете видалити?')"
-                                style="
+                        @if (auth()->user()->id === $comment->user->id)
+                            {!! Form::open(['method'=>'DELETE',
+                            'route' => ['comment.remove', $comment->id]])  !!}
+                            <button onclick=" return confirm('Ви точно хочете видалити?')"
+                                    style="
                             background: transparent;
                             border: none;
                             padding: 0px;
                                   ">
-                            <i class="glyphicon glyphicon-remove" style="color: #337ab7"></i>
-                        </button>
-                        {!! Form::close() !!}
+                                <i class="glyphicon glyphicon-remove" style="color: #337ab7"></i>
+                            </button>
+                            {!! Form::close() !!}
+                        @endif
                     </td>
                 </tr>
             @endforeach
