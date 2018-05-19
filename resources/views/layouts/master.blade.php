@@ -40,7 +40,7 @@
                     <a class="nav-link js-scroll-trigger" href="#about">Про нас</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Послуги</a>
+                    <a class="nav-link js-scroll-trigger" href="#services">Основні можливості</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio">Галерея</a>
@@ -55,7 +55,6 @@
         </div>
     </div>
 </nav>
-
 <header class="masthead text-center text-white d-flex">
     <div class="container my-auto">
         <div class="row">
@@ -91,12 +90,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading text-white">Ми даємо доступ до інформації</h2>
+                <h2 class="text-uppercase">
+                    <strong>Комплексний курсовий проект на тему:</strong>
+                </h2>
+                <h2 class="section-heading text-white">Автоматизована системи супроводу навчального процесу "EDUCATIO MEETING"</h2>
                 <hr class="light my-4">
                 <p class="text-faded mb-4">
-                    Зручний спосіб користування, дружній інтерфейс для корисувача. Проста навігація по сайту
+                   Виконав <br>
+                   Студент групи КН-14-2 <br>
+                   Ставнійчук Михайло
                 </p>
-                <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Наші послуги!</a>
+                <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Функціональні можливості системи!</a>
             </div>
         </div>
     </div>
@@ -161,10 +165,10 @@
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Category
+
                             </div>
                             <div class="project-name">
-                                Project Name
+                                Викладачі на кафедрі
                             </div>
                         </div>
                     </div>
@@ -176,10 +180,10 @@
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Category
+
                             </div>
                             <div class="project-name">
-                                Project Name
+                               Редагування особистих даних
                             </div>
                         </div>
                     </div>
@@ -191,10 +195,10 @@
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Category
+
                             </div>
                             <div class="project-name">
-                                Project Name
+                                Перегляд оголошень
                             </div>
                         </div>
                     </div>
@@ -206,10 +210,10 @@
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Category
+
                             </div>
                             <div class="project-name">
-                                Project Name
+                                Перегляд викладачем коментарів
                             </div>
                         </div>
                     </div>
@@ -221,10 +225,10 @@
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Category
+
                             </div>
                             <div class="project-name">
-                                Project Name
+                                Користквання викладачами чатом
                             </div>
                         </div>
                     </div>
@@ -236,10 +240,10 @@
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Category
+
                             </div>
                             <div class="project-name">
-                                Project Name
+                                Кабінет адміністратора
                             </div>
                         </div>
                     </div>
@@ -251,7 +255,7 @@
 
 <section class="bg-dark text-white">
     <div class="container text-center">
-        <h2 class="mb-4">Хочу розпочати роботу вже зараз!</h2>
+        <h2 class="mb-4">Хочете розпочати роботу вже зараз?</h2>
         <a class="btn btn-light btn-xl sr-button" href="main">Розпочати роботу!</a>
     </div>
 </section>
@@ -260,20 +264,20 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-heading">Для зв'язку!</h2>
+                <h2 class="section-heading">Дякую за увагу!</h2>
                 <hr class="my-4">
-                <p class="mb-5">Якщо у Вас є будь-які запитання чи побажання по покращенні роботи сайту, зв'яжіться з нами!</p>
+                <p class="mb-5">Якщо у Вас є будь-які запитання чи побажання по покращенні роботи сайту, зв'яжіться зі мною!</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 ml-auto text-center">
                 <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-                <p>123-456-6789</p>
+                <p>+380 97 229 0738</p>
             </div>
             <div class="col-lg-4 mr-auto text-center">
                 <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
                 <p>
-                    <a href="mailto:your-email@your-domain.com">feedback@whoispresent.com</a>
+                    <a href="mailto:your-email@your-domain.com">mishasia2515@gmail.com</a>
                 </p>
             </div>
         </div>
